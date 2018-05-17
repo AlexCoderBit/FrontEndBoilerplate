@@ -2,8 +2,10 @@ import { createStore, applyMiddleware, compose } from "redux";
 import { routerMiddleware } from "react-router-redux";
 import thunk from "redux-thunk";
 import createHistory from "history/createBrowserHistory";
-import rootReducer from "./modules";
+import rootReducer from "../modules/";
+/* eslint-disable */
 import { composeWithDevTools } from "redux-devtools-extension";
+/* eslint-enable */
 
 export const history = createHistory();
 
